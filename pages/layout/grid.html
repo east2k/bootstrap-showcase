@@ -62,24 +62,623 @@
             </div>
             <div class="container">
                 <div class="p-3">
-                    <p class="text-primary h1">Container</p>
-                    <!-- Container 1 -->
+                    <p class="text-primary h1">Grid</p>
+                    <p class="text-secondary">Grid has 12 columns</p>
+                    <p class="text-secondary">Grid Breakpoints</p>
+                    <div class="container border border-info">
+                        <div class="row border-bottom border-info">
+                            <p class="col text-primary">.col-</p>
+                            <p class="col text-primary">.col-sm-</p>
+                            <p class="col text-primary">.col-md-</p>
+                            <p class="col text-primary">.col-lg-</p>
+                            <p class="col text-primary">.col-xl-</p>
+                            <p class="col text-primary">.col-xxl-</p>
+                        </div>
+                        <div class="row">
+                            <p class="col text-secondary">max-width becomes auto if</p>
+                            <p class="col text-secondary">max-width becomes 540px if</p>
+                            <p class="col text-secondary">max-width becomes 720px if</p>
+                            <p class="col text-secondary">max-width becomes 960px if</p>
+                            <p class="col text-secondary">max-width becomes 1140px if</p>
+                            <p class="col text-secondary">max-width becomes 1320px if</p>
+                        </div>
+                        <div class="row">
+                            <p class="col text-secondary">less than 576px</p>
+                            <p class="col text-secondary">greater than or equal to 576px</p>
+                            <p class="col text-secondary">greater than or equal to 768px</p>
+                            <p class="col text-secondary">greater than or equal to 992px</p>
+                            <p class="col text-secondary">greater than or equal to 1200px</p>
+                            <p class="col text-secondary">greater than or equal to 1400px</p>
+                        </div>
+                    </div>
+                    <!-- Grid 1 -->
                     <div class="border-bottom mb-4">
                         <p class="text-primary h5">Default Container</p>
                         <div class="container border border-info p-3">
-                            <div class="container">
-                                <div class="container bg-black">
-                                    <p class="text-white">
-                                        This default container will set max-width to each break points
-                                    </p>
+                            <div class="container mb-1">
+                                <div class="row bg-black">
+                                    <div class="col border border-primary bg-info p-2">
+                                        This has a class of .col
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2">
+                                        This has a class of .col
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2">
+                                        This has a class of .col
+                                    </div>
                                 </div>
                             </div>
                             <div class="bg-dark">
                                 <p class="p-2 h6 text-info border-bottom">Code:</p>
                                 <pre class="px-3">
                                     <code class="d-flex justify-content:-center align-items-start flex-column">
-                                        <span class="text-white float-start"><span class="text-warning">&lt;div class="container"&gt;
-    <span class="text-white"><span class="text-warning">&lt;p class="text-white"&gt;</span>This default container will set max-width to each break points<span  class="text-warning">&lt;/p&gt;</span></span>
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">This has a class of .col</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">This has a class of .col</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">This has a class of .col</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 2 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Auto-layout columns</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <div class="row bg-black">
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        1 out of 2 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 2 Column
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        1 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        3 out of 3 Column
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">1 out of 2 Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">2 out of 2 Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">1 out of 3 Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">2 out of 3 Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">3 out of 3 Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 3 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Grid Column Sizing</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <div class="row bg-black">
+                                    <div class="col-6 border border-primary bg-info p-2 text-center">
+                                        .col-6 1 out of 3 Wide Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col-5 border border-primary bg-info p-2 text-center">
+                                        .col-5 1 out of 3 Wide Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        3 out of 3 Column
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col-4 border border-primary bg-info p-2 text-center">
+                                        .col-4 1 out of 3 Wide Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        3 out of 3 Column
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col-3 border border-primary bg-info p-2 text-center">
+                                        .col-3 1 out of 3 Wide Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        3 out of 3 Column
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col-2 border border-primary bg-info p-2 text-center">
+                                        .col-2 1 out of 3 Wide Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        3 out of 3 Column
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col-1 border border-primary bg-info p-2 text-center">
+                                        .col-1 1 out of 3 Wide Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        2 out of 3 Column
+                                    </div>
+                                    <div class="col border border-primary bg-info p-2 text-center">
+                                        3 out of 3 Column
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-6"&gt;</span>
+            <span class="">.col-6 1 out of 3 Wide Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span  class="text-success">// Some 2 additional .col placeholders</span>
+    <span  class="text-warning">&lt;/div&gt;</span> 
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-5"&gt;</span>
+            <span class="">.col-5 1 out of 3 Wide Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span  class="text-success">// Some 2 additional .col placeholders</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-4"&gt;</span>
+            <span class="">.col-4 1 out of 3 Wide Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span  class="text-success">// Some 2 additional .col placeholders</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-3"&gt;</span>
+            <span class="">.col-3 1 out of 3 Wide Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span  class="text-success">// Some 2 additional .col placeholders</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-2"&gt;</span>
+            <span class="">.col-2 1 out of 3 Wide Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span  class="text-success">// Some 2 additional .col placeholders</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-1"&gt;</span>
+            <span class="">.col-1 1 out of 3 Wide Column</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span  class="text-success">// Some 2 additional .col placeholders</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 4 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Column based on natural width of content</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <p>col-<span class="text-success">{breakpoint}</span>-auto</p>
+                                <div class="row bg-black">
+                                    <div class="col col-lg-2 text-center border border-primary bg-info p-2">
+                                        .col and .col-lg-2
+                                    </div>
+                                    <div class="col-md-auto text-center border border-primary bg-info p-2">
+                                        .col-md-auto
+                                    </div>
+                                    <div class="col col-lg-2 text-center border border-primary bg-info p-2">
+                                        .col and .col-lg-2
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col-md-auto text-center border border-primary bg-info p-2">
+                                        .col-md-auto
+                                    </div>
+                                    <div class="col col-lg-2 text-center border border-primary bg-info p-2">
+                                        .col and .col-lg-2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">.col and .col-lg-2</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-md-auto"&gt;</span>
+            <span class="">.col-md-auto</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class=""col col-lg-2"&gt;</span>
+            <span class="">.col and .col-lg-2</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span>
+            <span class="">.col</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-md-auto"&gt;</span>
+            <span class="">.col-md-auto</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class=""col col-lg-2"&gt;</span>
+            <span class="">.col and .col-lg-2</span>
+        <span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 5 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Responsive Columns</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <div class="row bg-black">
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col-2 text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col-10 text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-2"&gt;</span><span class="">.col-2</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-10"&gt;</span><span class="">.col-10</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 6 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Turning Stacked into Horizontal</p>
+                        <div class="container border border-info p-3">
+                            <p>col-<span class="text-success">{breakpoint}</span>-*</p>
+                            <div class="container mb-1">
+                                <div class="row bg-black">
+                                    <div class="col-sm-8 text-center border border-primary bg-info p-2">
+                                        .col-sm-8
+                                    </div>
+                                    <div class="col-sm-4 text-center border border-primary bg-info p-2">
+                                        .col-sm-4
+                                    </div>
+                                </div>
+                                <div class="row bg-black">
+                                    <div class="col-sm text-center border border-primary bg-info p-2">
+                                        .col-sm
+                                    </div>
+                                    <div class="col-sm text-center border border-primary bg-info p-2">
+                                        .col-sm
+                                    </div>
+                                    <div class="col-sm text-center border border-primary bg-info p-2">
+                                        .col-sm
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-sm-8"&gt;</span><span class="">.col-sm-8</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-sm-4"&gt;</span><span class="">.col-sm-4</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-sm"&gt;</span><span class="">.col-sm</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-sm"&gt;</span><span class="">.col-sm</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-sm"&gt;</span><span class="">.col-sm</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 7 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Changing Size depends on Breakpoint</p>
+                        <div class="container border border-info p-3">
+                            <p>col-<span class="text-success">{breakpoint}</span>-*</p>
+                            <div class="container mb-1">
+                                <!-- Turning into .col-6 when mobile size -->
+                                <div class="row bg-black">
+                                    <div class="col-md-8 text-center border border-primary bg-info p-2">
+                                        .col-md-8
+                                    </div>
+                                    <div class="col-6 col-md-4 text-center border border-primary bg-info p-2">
+                                        .col-6 and .col-md-4
+                                    </div>
+                                </div>
+                                <!-- Turning into 50% size when mobile size, but 33.3% when desktop -->
+                                <div class="row bg-black">
+                                    <div class="col-6 col-md-4 text-center border border-primary bg-info p-2">
+                                        .col-6 and .col-md-4
+                                    </div>
+                                    <div class="col-6 col-md-4 text-center border border-primary bg-info p-2">
+                                        .col-6 and .col-md-4
+                                    </div>
+                                    <div class="col-6 col-md-4 text-center border border-primary bg-info p-2">
+                                        .col-6 and .col-md-4
+                                    </div>
+                                </div>
+                                <!-- Both 50% for desktop and mobile -->
+                                <div class="row bg-black">
+                                    <div class="col-6 text-center border border-primary bg-info p-2">
+                                        .col-6
+                                    </div>
+                                    <div class="col-6 text-center border border-primary bg-info p-2">
+                                        .col-6
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span  class="text-success">// Turning into .col-6 when mobile size</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-md-8"&gt;</span><span class="">.col-md-8</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-6 col-md-4"&gt;</span><span class="">.col-6 and .col-md-4</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-success">// Turning into 50% size when mobile size, but 33.3% when desktop</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-6 col-md-4"&gt;</span><span class="">.col-6 .col-md-4</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-6 col-md-4"&gt;</span><span class="">.col-6 .col-md-4</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-6 col-md-4"&gt;</span><span class="">.col-6 .col-md-4</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-success">// Both 50% for desktop and mobile</span>
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-6"&gt;</span><span class="">.col-6</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-6"&gt;</span><span class="">.col-6</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 8 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Row Columns (Changing Column Size with in the Row)</p>
+                        <div class="container border border-info
+                        <br> p-3">
+                            <p class="text-center text-secondary">2 Columns</p>
+                            <div class="container mb-1">
+                                <div class="row row-cols-2 bg-black">
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="text-center text-secondary">3 Columns</p>
+                            <div class="container mb-1">
+                                <div class="row row-cols-3 bg-black">
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="text-center text-secondary">Auto Columns</p>
+                            <div class="container mb-1">
+                                <div class="row row-cols-auto bg-black">
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="text-center text-secondary">4 Columns</p>
+                            <div class="container mb-1">
+                                <div class="row row-cols-4 bg-black">
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                    <div class="col text-center border border-primary bg-info p-2">
+                                        .col
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row row-cols-2"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+
+<span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row row-cols-3"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+
+<span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row row-cols-auto"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+
+<span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row row-cols-4"&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col"&gt;</span><span class="">.col</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid 9 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h5">Changing Size depends on Breakpoint</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <div class="row bg-black">
+                                    <div class="col-sm-4 text-center border border-primary bg-info p-2">
+                                        1st Column .col-sm-2
+                                    </div>
+                                    <div class="col-md-8 text-center border border-primary bg-info">
+                                        <div class="row">
+                                            <div class="col-10 col-sm-6 text-center border border-primary bg-info">
+                                                2nd Column .col-10 .col-sm-6
+                                            </div>
+                                            <div class="col-2 col-sm-6 text-center border border-primary bg-info">
+                                                2nd Column .col-2 .col-sm-6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="row"&gt;</span>
+        <span class="text-warning">&lt;div class="col-sm-4"&gt;</span><span class="">1st Column .col-sm-2</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="col-md-8"&gt;</span><span class="">
+            <span class="text-warning">&lt;div class="row"&gt;</span>
+                <span class="text-warning">&lt;div class="col-10 col-sm-6"&gt;</span><span class="">2nd Column .col-10 col-sm-6</span><span  class="text-warning">&lt;/div&gt;</span>
+                <span class="text-warning">&lt;div class="col-2 col-sm-6"&gt;</span><span class="">2nd Column .col-2 col-sm-6</span><span  class="text-warning">&lt;/div&gt;</span>
+            </span><span  class="text-warning">&lt;/div&gt;</span>
+        </span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
 <span class="text-warning">&lt;/div&gt;</span></span>
                                     </code>
                                 </pre>
