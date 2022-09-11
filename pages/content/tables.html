@@ -1,0 +1,627 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Paragraphs - Bootstrap Showcase</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <main class="w-100 d-flex">
+        <div class="w-25 min-vh-100 border-end scrollbar overflow-auto bg-light">
+            <h1 class="p-3"><a class="text-decoration-none" href="../../index.html">Bootstrap Showcase</a></h1>
+
+            <div class="px-3">
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item1">
+                        Texts
+                    </button>
+                    <div class="collapse" id="item1">
+                        <a href="../texts/headers.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Headers</a>
+                        <a href="../texts/texts-basics.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Text Basics</a>
+                        <a href="../texts/color.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Colors</a>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item2">
+                        Layout
+                    </button>
+                    <div class="collapse" id="item2">
+                        <a href="../layout/container.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Container</a>
+                        <a href="../layout/grid.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Grid</a>
+                        <a href="../layout/columns.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Columns</a>
+                        <a href="../layout/gutters.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Gutters</a>
+                        <a href="../layout/css-grid.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">CSS Grid</a>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item3">
+                        Content
+                    </button>
+                    <div class="collapse" id="item3">
+                        <a href="./images.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Images</a>
+                        <a href="./figures.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Figures</a>
+                        <a href="./tables.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Tables</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Start -->
+        <div class="d-flex flex-column w-100">
+            <div class="w-100 p-3 border-bottom d-flex align-items-center justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                </div>
+                <div class="input-group input-group-sm w-50">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+            <div class="container">
+                <div class="p-3">
+                    <p class="text-primary h1">Tables</p>
+                    <!-- Tables 1 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Standard Table</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td>Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td>chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;table class="table"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;thead&gt;</span>
+        <span class="text-warning">&lt;tr&gt;</span>
+            <span class="text-warning">&lt;th scope="col"&gt;</span><span class="">ID</span><span class="text-warning">&lt;/th&gt;</span>
+            <span class="text-warning">&lt;th scope="col"&gt;</span><span class="">First</span><span class="text-warning">&lt;/th&gt;</span>
+            <span class="text-warning">&lt;th scope="col"&gt;</span><span class="">Last</span><span class="text-warning">&lt;/th&gt;</span>
+        <span class="text-warning">&lt;/tr&gt;</span>
+    <span class="text-warning">&lt;/thead&gt;</span>
+    <span class="text-warning">&lt;tbody&gt;</span>
+        <span class="text-warning">&lt;tr&gt;</span>
+            <span class="text-warning">&lt;th scope="row"&gt;</span><span class="">1</span><span class="text-warning">&lt;/th&gt;</span>
+            <span class="text-warning">&lt;td&gt;</span><span class="">Chris</span><span class="text-warning">&lt;/td&gt;</span>
+            <span class="text-warning">&lt;td&gt;</span><span class="">Rock</span><span class="text-warning">&lt;/td&gt;</span>
+        <span class="text-warning">&lt;/tr&gt;</span>
+        <span class="text-warning">&lt;tr&gt;</span>
+            <span class="text-warning">&lt;th scope="row"&gt;</span><span class="">2</span><span class="text-warning">&lt;/th&gt;</span>
+            <span class="text-warning">&lt;td&gt;</span><span class="">Will</span><span class="text-warning">&lt;/td&gt;</span>
+            <span class="text-warning">&lt;td&gt;</span><span class="">Smith</span><span class="text-warning">&lt;/td&gt;</span>
+        <span class="text-warning">&lt;/tr&gt;</span>
+        <span class="text-warning">&lt;tr&gt;</span>
+            <span class="text-warning">&lt;th scope="row"&gt;</span><span class="">3</span><span class="text-warning">&lt;/th&gt;</span>
+            <span class="text-warning">&lt;td&gt;</span><span class="">Chris</span><span class="text-warning">&lt;/td&gt;</span>
+            <span class="text-warning">&lt;td&gt;</span><span class="">Smith</span><span class="text-warning">&lt;/td&gt;</span>
+        <span class="text-warning">&lt;/tr&gt;</span>
+    <span class="text-warning">&lt;/tbody&gt;</span>
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 2 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Table Colors / Variants</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Class</th>
+                                            <th scope="col">Header</th>
+                                            <th scope="col">Header</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Default</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr class="table-primary">
+                                            <th scope="row">Primary</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr class="table-secondary">
+                                            <th scope="row">Secondary</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr class="table-danger">
+                                            <th scope="row">Danger</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr class="table-warning">
+                                            <th scope="row">Warning</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr class="table-info">
+                                            <th scope="row">Info</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr class="table-light">
+                                            <th scope="row">Light</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                        <tr class="table-dark">
+                                            <th scope="row">Dark</td>
+                                            <td>Data</td>
+                                            <td>Data</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="line text-white float-start"><span class="text-success">//Whole Table</span>
+<span class="text-warning">&lt;table class="table table-(color)"&gt;<span class="text-white">...<span class="text-warning">&lt;/table&gt;</span></span>
+<span class="text-success">//Table Row</span>
+<span class="text-warning">&lt;tr class="table-(color)"&gt;<span class="text-white">...<span class="text-warning">&lt;/tr&gt;</span></span>
+<span class="text-success">//Table Data or Header</span>
+<span class="text-warning">&lt;tr&gt;</span>
+    <span class="text-warning">&lt;td class="table-(color)"&gt;<span class="text-white">...<span class="text-warning">&lt;/td&gt;</span></span>
+<span class="text-warning">&lt;/tr&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 3 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Striped Rows</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td>Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td>chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;table class="table table-striped"&gt;<span class="text-white ms-3">
+    ...
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 4 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Striped Columns</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table table-striped-columns">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td>Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td>chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;table class="table table-striped-columns"&gt;<span class="text-white ms-3">
+    ...
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 5 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Striped with Colors</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table table-dark table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td>Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td>chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;table class="table table-dark table-striped-columns"&gt;<span class="text-white ms-3">
+    ...
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 6 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Hoverable Rows</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td>Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td>chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;table class="table table-hover"&gt;<span class="text-white ms-3">
+    ...
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 6 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Hoverable Rows with Colors</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table table-dark table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td>Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td>chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;table class="table table-dark table-hover"&gt;<span class="text-white ms-3">
+    ...
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 7 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Hoverable Rows with Stripped</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td>Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td>chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;table class="table table-striped table-hover"&gt;<span class="text-white ms-3">
+    ...
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 8 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Active Tables or Highlighting</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-active">
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td class="table-active">Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td class="table-active">chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="line text-white float-start"><span class="text-warning">&lt;tr class="table-active"&gt;<span class="text-white">...<span class="text-warning">&lt;/tr&gt;</span></span>
+<span class="text-warning">&lt;tr&gt;</span>
+    <span class="text-warning">&lt;td class="table-active"&gt;<span class="text-white">...<span class="text-warning">&lt;/td&gt;</span></span>
+<span class="text-warning">&lt;/tr&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tables 9 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Active Tables or Highlighting with Colors</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-active">
+                                            <th scope="row">1</td>
+                                            <td>Chris</td>
+                                            <td>Rock</td>
+                                            <td>chrisrock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</td>
+                                            <td>Will</td>
+                                            <td class="table-active">Smith</td>
+                                            <td>willsmith</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</td>
+                                            <td>Chris</td>
+                                            <td>Smith</td>
+                                            <td class="table-active">chrissmith</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="line text-white float-start"><span class="text-warning">&lt;table class="table table-(color)"&gt;<span class="text-white">
+    <span class="text-warning">&lt;tr class="table-active"&gt;<span class="text-white">...<span class="text-warning">&lt;/tr&gt;</span></span>
+    <span class="text-warning">&lt;tr&gt;</span>
+        <span class="text-warning">&lt;td class="table-active"&gt;<span class="text-white">...<span class="text-warning">&lt;/td&gt;</span></span>
+    <span class="text-warning">&lt;/tr&gt;</span>
+<span class="text-warning">&lt;/table&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
