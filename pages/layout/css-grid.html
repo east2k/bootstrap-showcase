@@ -1,0 +1,551 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Paragraphs - Bootstrap Showcase</title>
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="w-100 d-flex">
+        <div class="w-25 min-vh-100 border-end scrollbar overflow-auto bg-light">
+            <h1 class="p-3"><a class="text-decoration-none" href="../../index.html">Bootstrap Showcase</a></h1>
+
+            <div class="px-3">
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item1">
+                        Texts
+                    </button>
+                    <div class="collapse" id="item1">
+                        <a href="../texts/headers.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Headers</a>
+                        <a href="../texts/texts-basics.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Text Basics</a>
+                        <a href="../texts/color.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Colors</a>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item2">
+                        Layout
+                    </button>
+                    <div class="collapse" id="item2">
+                        <a href="./container.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Container</a>
+                        <a href="./grid.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Grid</a>
+                        <a href="./columns.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Columns</a>
+                        <a href="./gutters.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Gutters</a>
+                        <a href="./css-grid.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">CSS Grid</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Start -->
+        <div class="d-flex flex-column w-100">
+            <div class="w-100 p-3 border-bottom d-flex align-items-center justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                </div>
+                <div class="input-group input-group-sm w-50">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+            <div class="container">
+                <div class="p-3">
+                    <p class="text-primary h1">CSS Grid</p>
+                    <p class=" text-secondary">Put in the header: https://getbootstrap.com/docs/5.2/assets/css/docs.css
+                    </p>
+                    <!-- CSS Grid 1 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Creating a Grid</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="container">
+                                    <div class="grid">
+                                        <div class="g-col-4 border border-primary bg-info p-2">
+                                            .g-col-4
+                                        </div>
+                                        <div class="g-col-4 border border-primary bg-info p-2">
+                                            .g-col-4
+                                        </div>
+                                        <div class="g-col-4 border border-primary bg-info p-2">
+                                            .g-col-4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="grid"&gt;</span>
+        <span class="text-warning">&lt;div class="g-col-4"&gt;</span><span class="line text-white">.g-col-4</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="g-col-4"&gt;</span><span class="line text-white">.g-col-4</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="g-col-4"&gt;</span><span class="line text-white">.g-col-4</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 2 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Responsive</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="container">
+                                    <div class="grid">
+                                        <div class="g-col-6 g-col-md-4 border border-primary bg-info p-2">
+                                            .g-col-6 .g-col-md-4
+                                        </div>
+                                        <div class="g-col-6 g-col-md-4 border border-primary bg-info p-2">
+                                            .g-col-6 .g-col-md-4
+                                        </div>
+                                        <div class="g-col-6 g-col-md-4 border border-primary bg-info p-2">
+                                            .g-col-6 .g-col-md-4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="container"&gt;<span class="text-white ms-3">
+    <span class="text-warning">&lt;div class="grid"&gt;</span>
+        <span class="text-warning">&lt;div class="g-col-6 g-col-md-4"&gt;</span><span class="line text-white">.g-col-6 .g-col-md-4</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="g-col-6 g-col-md-4"&gt;</span><span class="line text-white">.g-col-6 .g-col-md-4</span><span  class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;div class="g-col-6 g-col-md-4"&gt;</span><span class="line text-white">.g-col-6 .g-col-md-4</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span  class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 3 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Wrapping</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid">
+                                    <div class="g-col-6 border border-primary bg-info p-2">
+                                        .g-col-6
+                                    </div>
+                                    <div class="g-col-6 border border-primary bg-info p-2">
+                                        .g-col-6
+                                    </div>
+                                    <div class="g-col-6 border border-primary bg-info p-2">
+                                        .g-col-6
+                                    </div>
+                                    <div class="g-col-6 border border-primary bg-info p-2">
+                                        .g-col-6
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid"&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span  class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 4 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Start / Offset</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid">
+                                    <div class="g-col-3 g-start-2 border border-primary bg-info p-2">
+                                        .g-col-3 .g-start-2
+                                    </div>
+                                    <div class="g-col-4 g-start-6 border border-primary bg-info p-2">
+                                        .g-col-4 .g-start-6
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid"&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-3 g-start-2"&gt;</span><span class="line text-white">.g-col-3 .g-start-2</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-4 g-start-6"&gt;</span><span class="line text-white">.g-col-4 .g-start-6</span><span  class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 5 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Auto Columns</p>
+                        <p class="text-primary text-secondary">No .g-col, but has .grid in its parent</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid">
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid"&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 6 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Auto Columns 2</p>
+                        <p class="text-primary text-secondary">Mixing no .g-col with .g-col</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid">
+                                    <div class="g-col-6 border border-primary bg-info">
+                                        .g-col-6
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid"&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span  class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 7 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Nesting</p>
+                        <p class="text-primary text-secondary">
+                            Override amount of columns with: --bs-columns: (number of col, 12 max)</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid" style="--bs-columns: 3">
+                                    <div class="border border-primary bg-info">
+                                        1st Col
+                                        <div class="grid">
+                                            <div class="border border-primary bg-info">no class</div>
+                                            <div class="border border-primary bg-info">no class</div>
+                                        </div>
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        2nd Col
+                                        <div class="grid" style="--bs-columns: 12">
+                                            <div class="g-col-6 border border-primary bg-info">.g-col-6</div>
+                                            <div class="g-col-3 border border-primary bg-info">.g-col-3</div>
+                                            <div class="g-col-3 border border-primary bg-info">.g-col-3</div>
+                                        </div>
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        3rd Col
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid"&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span>
+        <span class="line text-white">1st Col</span>
+        <span class="text-warning">&lt;div class="grid"&gt;</span>
+            <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span class="text-warning">&lt;/div&gt;</span>
+            <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span>
+        <span class="line text-white">2nd Col</span>
+        <span class="text-warning">&lt;div class="grid" style="--bs-columns: 12"&gt;</span>
+            <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span class="text-warning">&lt;/div&gt;</span>
+            <span class="text-warning">&lt;div class="g-col-3"&gt;</span><span class="line text-white">.g-col-3</span><span class="text-warning">&lt;/div&gt;</span>
+            <span class="text-warning">&lt;div class="g-col-3"&gt;</span><span class="line text-white">.g-col-3</span><span class="text-warning">&lt;/div&gt;</span>
+        <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span>
+        <span class="line text-white">3rd Col</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 7 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">No Grid Classes but with Custom Columns</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid" style="--bs-columns: 3">
+                                    <div class="border border-primary bg-info">
+                                        1st Col
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        2nd Col
+                                    </div>
+                                    <div class="border border-primary bg-info">
+                                        3rd Col
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid" style="--bs-columns: 3"&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span>
+        <span class="line text-white">1st Col</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span>
+        <span class="line text-white">2nd Col</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span>
+        <span class="line text-white">3rd Col</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 8 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Adjusting Gaps and Column 1</p>
+                        <p class="text-secondary">Override amount of columns with: --bs-columns: (12 max)</p>
+                        <p class="text-secondary">Change gap with: --bs-gap: (amount)rem</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid" style="--bs-columns: 4; --bs-gap: 5rem">
+                                    <div class="g-col-2 border border-primary bg-info">
+                                        .g-col-2
+                                    </div>
+                                    <div class="g-col-2 border border-primary bg-info">
+                                        .g-col-2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid" style="--bs-columns: 4; --bs-gap: 5rem"&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-2"&gt;</span><span class="line text-white">.g-col-2</span><span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-2"&gt;</span><span class="line text-white">.g-col-2</span><span class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 9 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Adjusting Gaps and Column 2</p>
+                        <p class="text-secondary">Override amount of columns with: --bs-columns: (12 max)</p>
+                        <p class="text-secondary">Change gap with: --bs-gap: (amount)rem</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid" style="--bs-columns: 10; --bs-gap: 1rem">
+                                    <div class="g-col-6 border border-primary bg-info">
+                                        .g-col-6
+                                    </div>
+                                    <div class="g-col-4 border border-primary bg-info">
+                                        .g-col-4
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid" style="--bs-columns: 10; --bs-gap: 1rem"&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-4"&gt;</span><span class="line text-white">.g-col-4</span><span class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 10 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Adding Rows</p>
+                        <p class="text-secondary">g-start-(amount)</p>
+                        <p class="text-secondary">style="grid-row: (amount)"</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid" style="--bs-columns: 3; --bs-gap: 3rem">
+                                    <div class="border border-primary bg-info">
+                                        no class
+                                    </div>
+                                    <div class="g-start-2 border border-primary bg-info" style="grid-row: 2">
+                                        .g-start-2 with style="grid-row: 2"
+                                    </div>
+                                    <div class="g-start-3 border border-primary bg-info" style="grid-row: 3">
+                                        .g-start-3 with style="grid-row: 3"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid" style="--bs-columns: 10; --bs-gap: 1rem"&gt;</span>
+    <span class="text-warning">&lt;div&gt;</span><span class="line text-white">no class</span><span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-start-2" style="grid-row:2"&gt;</span><span class="line text-white">.g-start-2 with style="grid-row: 2"</span><span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-start-3" style="grid-row:3"&gt;</span><span class="line text-white">.g-start-2 with style="grid-row: 3"</span><span class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CSS Grid 11 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Gaps</p>
+                        <p class="text-secondary">Style --bs-gap: (col)rem (row)rem</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1 text-center">
+                                <div class="grid" style="--bs-gap: .25rem .75rem">
+                                    <div class="g-col-6 border border-primary bg-info">
+                                        .g-col-6
+                                    </div>
+                                    <div class="g-col-6 border border-primary bg-info">
+                                        .g-col-6
+                                    </div>
+                                    <div class="g-col-6 border border-primary bg-info">
+                                        .g-col-6
+                                    </div>
+                                    <div class="g-col-6 border border-primary bg-info">
+                                        .g-col-6
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="grid" style="--bs-gap: .25rem .75rem"&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="g-col-6"&gt;</span><span class="line text-white">.g-col-6</span><span class="text-warning">&lt;/div&gt;</span>
+<span  class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
