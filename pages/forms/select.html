@@ -55,11 +55,11 @@
                         Content
                     </button>
                     <div class="collapse" id="item3">
-                        <a href="./images.html"
+                        <a href="../content/images.html"
                             class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Images</a>
-                        <a href="./figures.html"
+                        <a href="../content/figures.html"
                             class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Figures</a>
-                        <a href="./tables.html"
+                        <a href="../content/tables.html"
                             class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Tables</a>
                     </div>
                 </div>
@@ -69,11 +69,11 @@
                         Forms
                     </button>
                     <div class="collapse" id="item4">
-                        <a href="../forms/overview.html"
+                        <a href="./overview.html"
                             class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Overview</a>
-                        <a href="../forms/form-control.html"
+                        <a href="./form-control.html"
                             class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Form Control</a>
-                        <a href="../forms/select.html"
+                        <a href="./select.html"
                             class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Select</a>
                     </div>
                 </div>
@@ -95,26 +95,29 @@
             </div>
             <div class="container">
                 <div class="p-3">
-                    <p class="text-primary h1">Figures</p>
-                    <!-- Figures 1 -->
+                    <p class="text-primary h1">Select</p>
+                    <!-- Forms Basics 1 -->
                     <div class="border-bottom mb-4">
-                        <p class="text-primary h4 mb-3">Responsive Images</p>
-                        <p class="text-secondary">applies max-width: 100% and height: auto</p>
+                        <p class="text-primary h4 mb-3">Default</p>
                         <div class="container border border-info p-3">
                             <div class="container mb-1">
-                                <figure class="figure">
-                                    <img src="img/placeholder-image.png" class="figure-img img-fluid rounded" alt="">
-                                    <figcaption class="figure-caption">Placeholder caption for image above</figcaption>
-                                </figure>
+                                <select class="form-select">
+                                    <option selected>Default Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                             <div class="bg-dark">
                                 <p class="p-2 h6 text-info border-bottom">Code:</p>
                                 <pre class="px-3">
                                     <code class="d-flex justify-content:-center align-items-start flex-column">
-                                        <span class="text-white"><span class="text-warning">&lt;figure class="figure"&gt;<span class="text-white ms-3">
-    <span class="text-white"><span class="text-warning">&lt;img src="placeholder-image.png" class="figure-img img-fluid rounded" alt="..."&gt;</span></span>
-    <span class="text-warning">&lt;figcaption class="figure-caption"&gt;</span><span class="">Placeholder caption for image above</span><span  class="text-warning">&lt;/figcaption&gt;</span>
-<span class="text-warning">&lt;/figure&gt;</span></span>
+                                        <span class="text-white"><span class="text-warning">&lt;select class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;option selected&gt;</span><span class="">Default Select</span><span class="text-warning">&lt;/option&gt;</span>
+    <span class="text-warning">&lt;option value="1"&gt;</span><span class="">One</span><span class="text-warning">&lt;/option&gt;</span>
+    <span class="text-warning">&lt;option value="2"&gt;</span><span class="">Two</span><span class="text-warning">&lt;/option&gt;</span>
+    <span class="text-warning">&lt;option value="3"&gt;</span><span class="">Three</span><span class="text-warning">&lt;/option&gt;</span>
+<span class="text-warning">&lt;/select&gt;</span></span>
                                     </code>
                                 </pre>
                             </div>

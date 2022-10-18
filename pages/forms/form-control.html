@@ -1,0 +1,393 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Paragraphs - Bootstrap Showcase</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <main class="w-100 d-flex">
+        <div class="w-25 min-vh-100 border-end scrollbar overflow-auto bg-light">
+            <h1 class="p-3"><a class="text-decoration-none" href="../../index.html">Bootstrap Showcase</a></h1>
+
+            <div class="px-3">
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item1">
+                        Texts
+                    </button>
+                    <div class="collapse" id="item1">
+                        <a href="../texts/headers.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Headers</a>
+                        <a href="../texts/texts-basics.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Text Basics</a>
+                        <a href="../texts/color.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Colors</a>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item2">
+                        Layout
+                    </button>
+                    <div class="collapse" id="item2">
+                        <a href="../layout/container.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Container</a>
+                        <a href="../layout/grid.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Grid</a>
+                        <a href="../layout/columns.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Columns</a>
+                        <a href="../layout/gutters.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Gutters</a>
+                        <a href="../layout/css-grid.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">CSS Grid</a>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item3">
+                        Content
+                    </button>
+                    <div class="collapse" id="item3">
+                        <a href="../content/images.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Images</a>
+                        <a href="../content/figures.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Figures</a>
+                        <a href="../content/tables.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Tables</a>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="btn w-100 border-0 text-start btn-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item4">
+                        Forms
+                    </button>
+                    <div class="collapse" id="item4">
+                        <a href="./overview.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Overview</a>
+                        <a href="./form-control.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Form Control</a>
+                        <a href="./select.html"
+                            class="py-2 ps-3 link-secondary list-group-item list-group-item-action">Select</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Start -->
+        <div class="d-flex flex-column w-75">
+            <div class="w-100 p-3 border-bottom d-flex align-items-center justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                </div>
+                <div class="input-group input-group-sm w-50">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
+            <div class="container">
+                <div class="p-3">
+                    <p class="text-primary h1">Form Basics</p>
+                    <!-- Forms Basics 1 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Standand Inputs</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <div class="mb-3">
+                                    <label class="form-label" for="inputEmail">Email Address</label>
+                                    <input class="form-control" type="email" id="inputEmail"
+                                        placeholder="placeholder@gmail.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="textareaInput">Textarea</label>
+                                    <textarea class="form-control" id="textareaInput" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;label class="form-label" for="inputEmail"&gt;</span><span class="">Email Address</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;input class="form-control" type="email" id="inputEmail" placeholder="placeholder@gmail.com"&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;div class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;label class="form-label" for="textareaInput"&gt;</span><span class="">Textarea</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;textarea class="form-control" id="textareaInput" rows="3"&gt;</span><span class=""></span><span class="text-warning">&lt;/textarea&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 2 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Sizing</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <input class="form-control form-control-sm mb-2" type="text"
+                                    placeholder=".form-control-sm">
+                                <input class="form-control mb-2" type="text" placeholder=".form-control (default)">
+                                <input class="form-control form-control-lg mb-2" type="text"
+                                    placeholder=".form-control-lg">
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;input class="form-control form-control-sm mb-2" type="text" placeholder=".form-control-sm"&gt;</span>
+<span class="text-warning">&lt;input class="form-control mb-2" type="text" placeholder=".form-control"&gt;</span>
+<span class="text-warning">&lt;input class="form-control form-control-lg mb-2" type="text" placeholder=".form-control-lg"&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 3 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Disabled</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <input class="form-control mb-2" type="text" placeholder=".form-control Disabled"
+                                    disabled>
+                                <input class="form-control mb-2" type="text" value=".form-control Disabled Read Only"
+                                    disabled readonly>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;input class="form-control mb-2" type="text" placeholder=".form-control Disabled" disabled&gt;</span>
+<span class="text-warning">&lt;input class="form-control mb-2" type="text" value=".form-control Disabled Read Only" disabled readonly&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 4 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Read Only</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <input class="form-control mb-2" type="text" value="Read Only text" readonly>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;input class="form-control mb-2" type="text" value="Read Only text" readonly&gt;</span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 5 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Read Only Plaint Text - Block-level</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <div class="mb-3 row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control-plaintext" readonly type="text" id="staticEmail"
+                                            value="placeholder@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="password" id="inputPassword">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="mb-3 row"&gt;</span>
+    <span class="text-warning">&lt;label for="staticEmail" class="col-sm-2 col-form-label"&gt;</span><span class="">Email</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;div class="col-sm-10"&gt;</span>
+        <span class="text-warning">&lt;input class="form-control-plaintext" readonly type="text" id="staticEmail" value="placeholder@gmail.com"&gt;</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;div class="mb-3 row"&gt;</span>
+    <span class="text-warning">&lt;label for="inputPassword" class="col-sm-2 col-form-label"&gt;</span><span class="">Password</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;div class="col-sm-10"&gt;</span>
+        <span class="text-warning">&lt;input class="form-control" type="password" id="inputPassword"&gt;</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 6 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Read Only Plaint Text - Inline-level</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <form class="mb-3 row">
+                                    <div class="col-auto">
+                                        <label class="visually-hidden" for="staticEmail">Email</label>
+                                        <input class="form-control-plaintext" readonly type="text" id="staticEmail"
+                                            value="placeholder@gmail.com">
+                                    </div>
+                                    <div class="col-auto">
+                                        <label class="visually-hidden" for="inputPassword">Password</label>
+                                        <input class="form-control" type="password" id="inputPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-primary mb-3">Confirm</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;form class="mb-3 row"&gt;</span>
+    <span class="text-warning">&lt;div class="col-auto"&gt;</span>
+        <span class="text-warning">&lt;label class="visually-hidden" for="staticEmail"&gt;</span><span class="">Email</span><span class="text-warning">&lt;/label&gt;</span>
+        <span class="text-warning">&lt;input class="form-control-plaintext" readonly type="text" id="staticEmail" value="placeholder@gmail.com"&gt;</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="col-auto"&gt;</span>
+        <span class="text-warning">&lt;label class="visually-hidden" for="inputPassword"&gt;</span><span class="">Password</span><span class="text-warning">&lt;/label&gt;</span>
+        <span class="text-warning">&lt;input class="form-control" type="password" id="inputPassword" placeholder="Password"&gt;</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+    <span class="text-warning">&lt;div class="col-auto"&gt;</span>
+        <span class="text-warning">&lt;button class="btn btn-primary mb-3"&gt;</span><span class="">Confirm</span><span class="text-warning">&lt;/button&gt;</span>
+    <span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;/form&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 7 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">File Input</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFile">Default File</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFileMultiple">Multiple Files</label>
+                                    <input class="form-control" type="file" multiple id="formFileMultiple">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFileDisabled">Disabled File</label>
+                                    <input class="form-control" type="file" disabled id="formFileDisabled">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFileSm">Small File Input</label>
+                                    <input class="form-control form-control-sm" type="file" id="formFileSm">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFileLg">Large File Input</label>
+                                    <input class="form-control form-control-lg" type="file" id="formFileLg">
+                                </div>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;div class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;label class="form-label" for="formFile"&gt;</span><span class="">Default File</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;input class="form-control" type="file" id="formFile"&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;div class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;label class="form-label" for="formFileMultiple"&gt;</span><span class="">Multiple Files</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;input class="form-control" type="file" multiple id="formFileMultiple"&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;div class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;label class="form-label" for="formFileDisabled"&gt;</span><span class="">Disabled Files</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;input class="form-control" type="file" disabled id="formFileDisabled"&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;div class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;label class="form-label" for="formFileSm"&gt;</span><span class="">Small File Input</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;input class="form-control form-control-sm" type="file" id="formFileSm"&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span>
+<span class="text-warning">&lt;div class="mb-3"&gt;</span>
+    <span class="text-warning">&lt;label class="form-label" for="formFileLg"&gt;</span><span class="">Large File Input</span><span class="text-warning">&lt;/label&gt;</span>
+    <span class="text-warning">&lt;input class="form-control form-control-lg" type="file" id="formFileLg"&gt;</span>
+<span class="text-warning">&lt;/div&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 8 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Color</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <label class="form-label" for="colorInput">Color Picker</label>
+                                <input class="form-control form-control-color" type="color" id="colorInput"
+                                    value="#000000" title="Choose your Color">
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;label class="form-label" for="colorInput"&gt;</span><span class="">Color Picker</span><span class="text-warning">&lt;/label&gt;</span>
+<span class="text-warning">&lt;input class="form-control form-control-color" type="color" id="colorInput" value="#000000" title="Choose your Color"&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Forms Basics 9 -->
+                    <div class="border-bottom mb-4">
+                        <p class="text-primary h4 mb-3">Datalists</p>
+                        <div class="container border border-info p-3">
+                            <div class="container mb-1">
+                                <label class="form-label" for="dataList">Datalist Example</label>
+                                <input class="form-control" list="datalistOptions" id="dataList"
+                                    placeholder="Enter search...">
+                                <datalist id="datalistOptions">
+                                    <option value="Asia">
+                                    <option value="Australia">
+                                    <option value="Africa">
+                                    <option value="America">
+                                    <option value="Europe">
+                                </datalist>
+                            </div>
+                            <div class="bg-dark">
+                                <p class="p-2 h6 text-info border-bottom">Code:</p>
+                                <pre class="px-3">
+                                    <code class="d-flex justify-content:-center align-items-start flex-column">
+                                        <span class="text-white"><span class="text-warning">&lt;label class="form-label" for="dataList"&gt;</span><span class="">Datalist Example</span><span class="text-warning">&lt;/label&gt;</span>
+<span class="text-warning">&lt;input class="form-control" list="datalistOptions" id="dataList" placeholder="Enter search..."&gt;</span>
+<span class="text-warning">&lt;datalist id="datalistOptions"&gt;</span>
+    <span class="text-warning">&lt;option value="Asia"&gt;</span>
+    <span class="text-warning">&lt;option value="Australia"&gt;</span>
+    <span class="text-warning">&lt;option value="Africa"&gt;</span>
+    <span class="text-warning">&lt;option value="America"&gt;</span>
+    <span class="text-warning">&lt;option value="Europe"&gt;</span>
+<span class="text-warning">&lt;/datalist&gt;</span></span>
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
